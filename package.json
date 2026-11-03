@@ -8,8 +8,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "angular": "^1.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preethipm-12/ANGULAR_JS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/preethipm-12/ANGULAR_JS/issues"
+  },
+  "homepage": "https://github.com/preethipm-12/ANGULAR_JS#readme",
+  "description": ""
 }
