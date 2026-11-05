@@ -1,47 +1,26 @@
+
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en" ng-app="myapp">
-=======
-<html lang="en">
->>>>>>> 55d9ba9642a089ebc3e9a0d9d52b40ee02f719cd
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Angular project</title>
-<<<<<<< HEAD
-    <!-- Fixed folder name to node_modules -->
-    <script src="node_modules/angular/angular.js"></script>
-    <!-- Fixed file path spacing/encoding -->
-    <script src="JS app.js"></script>
-</head>
-<body ng-controller="mycontroller">
-    <h1>Student Details</h1>
-    
-    <!-- Input Fields -->
-    <p>Name: <input type="text" ng-model="name"></p>
-    <p>Age: <input type="number" ng-model="age"></p>
-    <p>Department: <input type="text" ng-model="department"></p>
-    <p>Semester: <input type="text" ng-model="semester"></p>
-    
-    <hr>
-    
-    <!-- Entered Details Output -->
-    <h3>Entered Details:</h3>
-    <p>Name: {{ name }}</p>
-    <p>Age: {{ age }}</p>
-    <p>Department: {{ department }}</p>
-    <p>Semester: {{ semester }}</p>
-=======
+    <title>Student Management</title>
+
     <script src="node_modules/angular/angular.js"></script>
     <script src="app.js"></script>
 </head>
-<body ng-app="myapp" ng-controller="mycontroller">
-    <h1>student details</h1>
-    <h2>{{name}}</h2>
-    
-    <h3>update student name</h3>
-    <input type="text" ng-model="name">
-    <p>updated name: {{name}}</p>
->>>>>>> 55d9ba9642a089ebc3e9a0d9d52b40ee02f719cd
+
+<body ng-controller ="myCtrl" >
+
+    <h2>product list</h2>
+
+    <input ng-model="searchText" placeholder="Search for products..">
+    <p>today's date is {{ today | date:'fullDate' }}</p>
+
+    <div ng-repeat="p in products | filter:search">
+        {{ p.name }} - {{ p.price | currency:'₹' }}
+    </div>
+
+
+
 </body>
 </html>
