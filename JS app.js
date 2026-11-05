@@ -1,8 +1,13 @@
-var app = angular.module('myapp', []);
+var app = angular.module("myApp", []);
 
-app.controller('mycontroller', function($scope) {
-    $scope.name = "preethi";
-    $scope.age = "";
-    $scope.department = "";
-    $scope.semester = "";
+app.controller("myCtrl", function($scope) {
+
+    $scope.today = new Date();
+
+    $scope.products = [
+        { name: "Laptop", price: 50000 },
+        { name: "Mobile", price: 20000 },
+        { name: "Tablet", price: 1000 }
+    ];
+
 });
